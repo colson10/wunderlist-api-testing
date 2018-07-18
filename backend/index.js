@@ -7,7 +7,6 @@ const app = express();
 require('dotenv').config();
 
 const WUNDERLIST_OAUTH_URL = 'https://www.wunderlist.com/oauth/access_token';
-const OPEN_ID_URL = 'https://www.googleapis.com/plus/v1/people/me/openIdConnect';
 
 app.get('/oauth/wunderlist', (request, response) => {
   console.log('__STEP 3.1 - RECEIVING CODE__');
